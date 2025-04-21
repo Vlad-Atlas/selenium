@@ -1,4 +1,3 @@
-
 Thumbs.db*
 .DS_Store
 HELP.md
@@ -43,4 +42,4 @@ out/
 ### Exclusions ###
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
-!**/src/test/**
+!**/src/test/*
