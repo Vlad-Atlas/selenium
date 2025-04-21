@@ -19,9 +19,3 @@ dependencies {
     testImplementation 'org.seleniumhq.selenium:selenium-java:4.29.0'
     testImplementation 'io.github.bonigarcia:webdrivermanager:5.9.3'
 }
-
-test {
-    useJUnitPlatform()
-    // свойство chromeoptions.prefs используется для задания настроек браузера в проектах на основе Selenide, выключаем менеджер паролей
-    systemProperty 'chromeoptions.prefs', System.getProperty('chromeoptions.prefs', "profile.password_manager_leak_detection=false")
-}
