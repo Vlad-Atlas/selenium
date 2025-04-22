@@ -35,8 +35,8 @@ public class CallbackTest {
 
     @Test
     void shouldTestPositive() {
-        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Павел Пестель");
-        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79217931826");
+        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Павел Павлович");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79266337733");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button")).click();
         String expected = "  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
@@ -46,8 +46,8 @@ public class CallbackTest {
 
     @Test
     void shouldTestPositivResultDoubleSurname() {
-        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Муравьев-Апостол Сергей");
-        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79217951843");
+        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Божий-Петр Сергей");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79266337733");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button")).click();
         String expected = "  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
@@ -57,8 +57,8 @@ public class CallbackTest {
 
     @Test
     void shouldTestPositivResultDoubleName() {
-        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Лягушкин Иван-Царевичь");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79770001155");
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Водяной Иван-Царевичь");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+797711122233");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
         String expected = "  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
