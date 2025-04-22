@@ -58,7 +58,7 @@ public class CallbackTest {
     @Test
     void shouldTestPositivResultDoubleName() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Водяной Иван-Царевичь");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+797711122233");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79991234567");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
         String expected = "  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
